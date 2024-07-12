@@ -94,7 +94,7 @@ function Login() {
 
   return (
     <div className='w-full'>
-    <div className='w-full bg-gray-100 pb-10'>
+    <div className='w-full pb-5'>
    {
     successMsg ? (<div>
       {successMsg}
@@ -111,7 +111,7 @@ function Login() {
      <div className='flex flex-col gap-2'>
       <p className='text-sm font-medum'>Email or mobile phone number</p>
       <input 
-      className='w-full  py-1 border border-zinc-400 px-2 text-base outline-none
+      className='w-full   py-1 border border-zinc-400 px-2 text-base outline-none
        rounded-sm focus-within:border-[rgb(231,118,0)] focus-within:shadow-sm' 
        type='email'
        value={Email}
@@ -191,7 +191,7 @@ function Login() {
       
     </p>
     <Link to='/register' className='w-full'>
-    <button className='w-full py-1.5 mt-4 font-normal rounded-sm bg-gradient-to-t 
+    <button className='w-full  py-1.5 mt-4 font-normal rounded-sm bg-gradient-to-t 
     from-slate-200 to-slate-100 hover:bg-gradient-to-b border border-zinc-400 active:border-orange-800
     '>Create Your Rolantek account</button>
     </Link>

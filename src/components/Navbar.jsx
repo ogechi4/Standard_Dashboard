@@ -12,6 +12,7 @@ import prince from '../data/prince.jpg'
 import  {Cart, Chat, Notification, UserProfile} from '.'
 import { useStateContext } from '../contexts/ContextProvider'
 import { useSelector } from 'react-redux'
+import { Link} from 'react-router-dom';
 
 // function for our navigation button
  const NavButton = ({ title, customfunc, icon, color, dotColor}) => (
@@ -91,7 +92,7 @@ function Navbar() {
        position='BottomCenter'>
           
           <div className='flex items-center gap-2 cursor-pointer p-1
-          hover:bg-light-gray rounded-lg' onClick={()=> handleClick('userProfile')}>
+          hover:bg-light-gray rounded-lg' >
             <img
             className='rounded-full w-7 h-7'
             src={prince}
@@ -106,8 +107,11 @@ function Navbar() {
                 <span className='text-gray-400 font-bold ml-1 text-14'>Princewill</span>
               </p>)
             }
-            
+            <Link to='/login'>
+            <p className='text-gray-400 font-bold ml-1 text-14'>SignIn</p>
             <MdKeyboardArrowDown className='text-gray-400 text-i4' />
+            </Link>
+          
           </div>
 
        </TooltipComponent>

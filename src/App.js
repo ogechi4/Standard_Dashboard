@@ -19,7 +19,7 @@ function App() {
      
    <Routers>
     <Routes>
-      <Route path="/" exact index element={<Login />} />
+      <Route path="/" exact index element={<Ecommerce />} />
   
      <Route path="/register" element={<Register />} />
      <Route path="/ecommerce" element ={<Ecommerce />} />
@@ -27,6 +27,7 @@ function App() {
      <Route path="/orders" element ={<Orders />} />
      <Route path="/employees" element ={<Employees />} />
      <Route path="/customers" element ={<Customers />} />
+     <Route path="/login" element ={<Login />} />
               {/* APPS */}
      <Route path="/kanban" element ={<Kanban />} />
      <Route path="/editor" element ={<Editor />} />

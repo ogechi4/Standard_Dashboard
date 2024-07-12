@@ -12,7 +12,7 @@ function ThemeSettings() {
     <div className="bg-half-transparent w-screen fixed nav-item top-0 right-0">
       <div className="float-right h-screen dark:text-gray-200 bg-white dark:bg-[#484B52] w-400 p-8">
         <div className="flex justify-between items-center">
-          <p className="font-semibold text-lg">Settings</p>
+          <p className="font-semibold text-lg ml-5">Settings</p>
           <button
             type="button"
             onClick={() => setThemeSettings(false)}
@@ -22,7 +22,7 @@ function ThemeSettings() {
           </button>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 ml-5">
           <p className="font-semibold text-xl">Theme Options</p>
           <div className="mt-4">
             <input
@@ -54,7 +54,7 @@ function ThemeSettings() {
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 p-4 ml-5">
           <p className="font-semibold text-xl">Theme Colors</p>
           <div className="flex gap-3">
             {themeColors.map((color, index) => (

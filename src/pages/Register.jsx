@@ -136,7 +136,7 @@ const handleRegistration =(e)=>{
   return (
     <div className='w-full'>
       <div className='w-full bg-gray-100 pb-10'>
-        <form className='w-[450px] mx-auto flex flex-col items-center'>
+        <form className='lg:w-[450px] sm:w-[450px] w-full mx-auto flex flex-col items-center'>
           <img className=''src={logo} alt="" width={32} />
           <div className='w-full border border-zinc-200 p-6'>
              <h2 className='font-arial text-3xl font-medium mb-4'>

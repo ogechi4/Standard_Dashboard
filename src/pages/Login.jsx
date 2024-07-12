@@ -99,7 +99,7 @@ function Login() {
     successMsg ? (<div>
       {successMsg}
     </div>):
-    ( <form className='w-[500px] mx-auto flex flex-col items-center'>
+    ( <form className='lg:w-[500px] sm:w-[500px] w-full mx-auto flex flex-col items-center'>
     <img className='mt-4' src={logo} width={32} alt='' />
     
 
@@ -215,7 +215,10 @@ function Login() {
           <p className=' text-xs text-blue-600 mt-4 cursor-pointer
     hover:text-orange-600 group-hover:text-orange-600' >Conditions of Use</p>
       </div>
+      <div>
       <p className='text-xs text-gray-600'>08124783577, Prince.com, Inc. or its affilliates</p>
+      </div>
+      
     </div>
      
     </div>
